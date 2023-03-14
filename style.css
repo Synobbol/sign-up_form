@@ -124,6 +124,10 @@ input{
 	border-radius: 3px;
 	padding: 0.3rem;
 }
+input:focus{
+	border-color: blue;
+	box-shadow: #222222;
+}
 .btn{
 	color: white;
 	padding: 0.7rem 3rem;
