@@ -120,8 +120,9 @@ label{
 	padding-bottom: 3px;
 }
 input{
-	border:1px solid rgba(0,0,0, 0.4);
+	border:2px solid rgba(0,0,0, 0.4);
 	border-radius: 3px;
+	padding: 0.3rem;
 }
 .btn{
 	color: white;
@@ -166,4 +167,18 @@ input:valid{
 }
 .link:hover{
 	color:rgba(255, 255, 255, 0.4);
+}
+/* input:invalid {
+	border-color: red;
+} */
+
+.error{
+	font-size: 0.7rem;
+	color: #900;
+	width:100%;
+	padding:0;
+}
+.error.active {
+padding: 0.3rem;
+
 }

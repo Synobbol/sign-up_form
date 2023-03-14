@@ -33,28 +33,33 @@
             <legend>Let's do this!</legend>
 
             <div class="col">
-                <label for="fName">First Name</label>
+                <label for="fName">First Name*</label>
                 <input type="text" name="fName" id="name" required>
+                <span class="error"></span>
             </div>
             <div class="col">
-                <label for="lName">Last Name</label>
+                <label for="lName">Last Name*</label>
                 <input type="text" name="lName" id="lastName" required>
+                <span class="error"></span>
             </div>
             <div class="col">
-                <label for="email">Email</label>
+                <label for="email">Email*</label>
                 <input type="email" name="email" id="email" required>
+                <span class="error"></span>
             </div>
             <div class="col">
                 <label for="phone">Phone number</label>
                 <input type="tel" name="phone" id="tel">
             </div>
             <div class="col">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="passW" required>
+                <label for="password">Password*</label>
+                <input type="password" name="password" id="passW" required pattern ="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                <span class="error"></span>
             </div>
             <div class="col">
-                <label for="confPassW">Confirm password</label>
+                <label for="confPassW">Confirm password*</label>
                 <input type="password" name="confPassW" id="cPassW" required>
+                <span class="error"></span>
             </div>
         </form>
 
@@ -63,4 +68,5 @@
         <p class="login">Already have an account? <a href="#">Log in</a></p>
     </main>
 </body>
+<script src="script.js"></script>
 </html>
